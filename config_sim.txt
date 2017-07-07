@@ -1,0 +1,12 @@
+[Files]
+Dictionary: /home/paulo/PycharmProjects/VoiceRecognition/Data/Simulacao/Simulacao.dict
+Kws: /home/paulo/PycharmProjects/VoiceRecognition/Data/Simulacao/Simulacao_Keyphrase.list
+Logfn: /home/paulo/PycharmProjects/VoiceRecognition/Data/Simulacao/logfn.log
+
+[Commands]
+ROTATE RIGHT = r -0.01
+ROTATE LEFT = r 0.01
+MOVE FORWARD = f 0.7
+STOP MOVING = 0
+SAVE POINT = save point
+GO TO LOCATION = go to point

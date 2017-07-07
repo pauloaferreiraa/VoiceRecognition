@@ -9,10 +9,8 @@ import pyaudio, Parser as p
 modeldir = get_model_path()
 socket = socket(AF_INET, SOCK_STREAM) #cria um socket
 
-host = 'localhost'
+host = '10.42.0.1'
 port = 8421
-vel_linear = 0.1
-vel_angular = 0.7
 broke = False
 
 files = p.ConfigSectionMap('Files') #dicionario com nome do ficheiro e path. Ex: {dictionary: path,kws:path}
@@ -23,7 +21,7 @@ def parseVoice(frase):
     if frase == 'STOP LISTENING':
         return -1
     elif frase in commands.keys():
-        socket.sendall(''.join([commands[frase],'\n']).encode())
+        socket.sendall(commands[frase].encode())
     return 1
 
 
@@ -45,7 +43,7 @@ socket.connect((host,port))
 
 print 'A enviar talker ...'
 time.sleep(1)
-socket.send('talker\n'.decode())
+socket.send('talker'.decode())
 print 'Enviou talker'
 
 # Process audio chunk by chunk. On keyphrase detected perform action and restart search

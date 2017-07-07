@@ -1,0 +1,12 @@
+[Files]
+Dictionary: /home/paulo/PycharmProjects/VoiceRecognition/Data/Robot/Robot.dic
+Kws: /home/paulo/PycharmProjects/VoiceRecognition/Data/Robot/Robot_Keyphrase.list
+Logfn: /home/paulo/PycharmProjects/VoiceRecognition/Data/Robot/logfn.log
+
+[Commands]
+ROTATE RIGHT= 0 -0.7
+ROTATE LEFT= 0 0.7
+MOVE FORWARD= 0.1 0
+STOP MOVING= 0 0
+WALK LEFT= 0.1 0.7
+WALK RIGHT= 0.1 -0.7
